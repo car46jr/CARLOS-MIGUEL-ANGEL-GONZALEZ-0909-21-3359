@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probando un swicth</title>
+   
+    
+
+</head>
+<body>
+
+  <form action=""> <!--creacion de un formulario-->
+    <input id="myInput" type="text"> <br>  <br> <!--espacio donde ingresara la opción para realizar la condicion -->
+    <input type="button" value="seleccion" onclick="myFunction()" id="yacosa"></input> <!--boton para ingresar a la opción seleccionada-->
+     <br><br>
+    <p id="demo"></p>
+  </form>
+  
+  <script>  //opción donde empieza la condicion
+    function myFunction() { 
+ 
+      var moneda = document.getElementById("myInput").value;
+    
+      switch(moneda) { //condicion para revisar la opción ingresada y realizar la condicion 
+        case "1":
+        alert("Si Funcionan el swicth");
+        break;
+        case "2":
+        window.location="Es Contradecir lo demas ";
+        break;
+    
+      }
+      document.getElementById("demo").innerHTML = text;
+    }
+    </script>
+</body>
+</html>
