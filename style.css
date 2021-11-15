@@ -1,0 +1,23 @@
+body{
+    background-image:url(paquete.png);
+    background-size: 1000px;
+    background-position: top;
+}
+h1{
+    text-align: center;
+    text-decoration: solid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+p{
+    text-align: center;
+    text-decoration: solid;
+    font-family: fantasy;
+}
+form{
+    text-align: center;
+    
+}
+input#nose{
+    text-align: center;
+}

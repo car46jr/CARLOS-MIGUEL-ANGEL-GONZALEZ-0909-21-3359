@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paqueteria</title>
+</head>
+<body>
+<p>Para empezar que enviaras.</p>
+
+<p>
+    1= Documentos <br>
+    2= Paqueteria <br>
+    3= Mobiliario <br>
+    4= Repuestos <br>
+    5= ELectrodomesticos</p>
+
+<form action=""> <!--creacion de un formulario-->
+    <input id="myInput" type="text">   <!--espacio donde ingresara la opción para realizar la condicion -->
+  
+    <p>Ingreso el Largo del objeto</p>
+    <input id="La" type="text">
+    <p>Ingreso el Ancho del objeto</p>
+    <input id="ob" type="text">
+    <p>Ingreso el Alto del objeto</p>
+    <input id="Al" type="text">
+    <br>
+    <P> <b>UBICACION DESTINO :</b> <br>
+        Ingresar el kilometraje </P> 
+               <p> GUATEMALA= 10 <br>
+                IZABAL= 300 <br>
+                PETEN= 460 <br>
+                CHIQUIMULA= 178 <br>
+                RETALHULEU= 200 </p>
+    <input id="llegada1" type="text">  <br>
+    <input type="button" value="seleccion" onclick="myFunction()" id="yacosa"></input> <!--boton para ingresar a la opción seleccionada-->
+     <br> <br> <input type="button" value="Regresar" onclick="window.location = 'paquetaria.html';">
+    <br><br>
+    <p id="demo"></p>
+  </form>
+  
+  <script>  //opción donde empieza la condicion
+
+    function myFunction() { 
+ 
+      var moneda = document.getElementById("myInput").value;
+    
+      switch(moneda) { //condicion para revisar la opción ingresada y realizar la condicion 
+        case "1":
+            var kim=document.getElementById("La").value;
+            var pesop=document.getElementById("ob").value;
+            var peso2=document.getElementById("Al").value;
+            var kim2=document.getElementById("llegada1").value;
+
+                 var resultado1=(40);
+                alert("EL valor de su envio es de: Q " +resultado1);   
+        break;
+        case "2":
+        var kim=document.getElementById("La").value;
+            var pesop=document.getElementById("ob").value;
+            var peso2=document.getElementById("Al").value;
+            var kim2=document.getElementById("llegada1").value;
+
+                 var resultado1=(kim*pesop*peso2/2272)+(kim2*0.13);
+                alert("EL valor de su envio es de: Q " +resultado1); 
+        break;
+        case "3":
+        var kim=document.getElementById("La").value;
+            var pesop=document.getElementById("ob").value;
+            var peso2=document.getElementById("Al").value;
+            var kim2=document.getElementById("llegada1").value;
+
+                 var resultado1=(kim*pesop*peso2/2272)+(kim2*0.13); //formula que se realizara para sacar el valor de pago
+                alert("EL valor de su envio es de: Q " +resultado1);
+        break;
+        case "4":
+        var kim=document.getElementById("La").value;
+            var pesop=document.getElementById("ob").value;
+            var peso2=document.getElementById("Al").value;
+            var kim2=document.getElementById("llegada1").value;
+
+                 var resultado1=(kim*pesop*peso2/2272)+(kim2*0.13);
+                alert("EL valor de su envio es de: Q " +resultado1);
+        break;
+        case "5":
+        var kim=document.getElementById("La").value;
+            var pesop=document.getElementById("ob").value;
+            var peso2=document.getElementById("Al").value;
+            var kim2=document.getElementById("llegada1").value;
+
+                 var resultado1=(kim*pesop*peso2/2272)+(kim2*0.13);
+                alert("EL valor de su envio es de: Q " +resultado1);
+        break;
+    
+      }
+      document.getElementById("demo").innerHTML = text;
+    }
+    </script>
+</body>
+</html>
+
+</body>
+</html>

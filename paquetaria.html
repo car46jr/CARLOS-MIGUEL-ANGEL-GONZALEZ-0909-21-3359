@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Paquetes</title>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Bienvenido a Paqueteria P&P</h1>
+    <p>Sabes el peso del objeto que enviaras.</p>
+    <p>1= Si <br>
+        2= No</p>
+    <form action=""> <!--creacion de un formulario-->
+        <input id="myInput" type="text"> <br>  <br> <!--espacio donde ingresara la opción para realizar la condicion -->
+        <input type="button" value="seleccion" onclick="myFunction()" id="nose"></input> <!--boton para ingresar a la opción seleccionada-->
+         <br><br>
+        <p id="demo"></p>
+      </form>
+      
+      <script>  //opción donde empieza la condicion
+        function myFunction() { 
+     
+          var moneda = document.getElementById("myInput").value;
+        
+          switch(moneda) { //condicion para revisar la opción ingresada y realizar la condicion 
+            case "1":
+            window.location="paquete.html"
+            break;
+            case "2":
+            window.location="Pesopaquete.html";
+            break;
+        
+          }
+          document.getElementById("demo").innerHTML = text;
+        }
+        </script>
+</body>
+</html>
